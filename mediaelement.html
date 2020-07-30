@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <script src="media/jquery.js"></script>
+    <script src="media/mediaelement-and-player.min.js"></script>
+    <link rel="stylesheet" href="media/mediaelementplayer.css" />
+</head>
+
+<body>
+Mediaelement player: https://github.com/mediaelement/mediaelement <br>
+Vdeio stream<br>
+
+    <video id="player" width="640" height="360" src="http://172.20.20.148:1935/live/myStream/playlist.m3u8" autoplay></video>
+    <script>
+	var player = new MediaElementPlayer('player', {
+	    success: function(mediaElement, originalNode) {
+	    },
+	});
+    </script>
+</body>
+</html>
+
+
+
+
+
